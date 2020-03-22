@@ -1,1 +1,107 @@
+body{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(202,211,212,1) 67%, rgba(255,255,255,1) 100%);
+}
 
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 718px;
+    height: 522px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#message-box{
+    display: none;
+    width: 718px;
+    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #def0d9;
+    margin-bottom: 15px;
+
+}
+
+.message-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkmark{
+    margin-left: 15px;
+}
+
+p{
+    margin-left: 15px;
+    color: #638c43;
+}
+
+.close{
+    display: flex;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.contact-card{
+    display: flex;
+    width: 718px;
+    height: 430px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    box-shadow: 10px 5px 10px 5px #159bb8;
+}
+
+form{
+    margin-left: 75px;
+}
+
+#firstName, #lastName{
+    width: 311px ;
+    height: 19px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gdr{
+    margin-left: 60px;
+}
+
+textarea{
+    width: 311px;
+    height: 115px;
+    margin-top: 12px;
+}
+
+
+
+#submit{
+    width: 65px;
+    height: 32px;
+    border-radius: 10%;
+    border-color: #1a8ba2;
+    float: right;
+    margin-top: 35px;
+    background-color: #159bb8;
+    color: #d3f8fc;
+}
+
+.user-logo{
+    margin-left: 45px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+
+ul{
+    list-style: none;
+}

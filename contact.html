@@ -2,11 +2,51 @@
 <html>
     <head>
         <title>Contact Form</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        
 
     </head>
     <body>
+        <main>
+        <div class="container">
+            <div id="message-box">
+                <div class="message-content">
+                <img  class= "checkmark" src="https://i.ya-webdesign.com/images/checkmark-svg-verified-15.png" width="23px" height="20">
+                <p id="banner"> </p>
+                </div>
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+            <div class="contact-card">
+                <form id="contact" name="myForm" onsubmit="return false" >
+                    <input type="text" id="firstName" placeholder="First name">
+                    <input type="text" id="lastName" placeholder="Last name">
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" class="gdr" name="gender" value="M">
+                    <label for="male">M</label><br>
+                    <input type="radio" class="gdr" name="gender" value="F">
+                    <label for="female">F</label><br>
+                    <textarea name="comment" id="msg" form="contact" placeholder="Your message here..."></textarea><br>
+                    <button type="submit" id="submit" onclick="return validateMyForm()" >Submit</button>
+                </form>
+                <img class="user-logo" src="https://www.clipartkey.com/mpngs/m/54-548655_professional-clipart-professional-guy-user-icon-png-green.png" width="276px" height="333px" >
+                
+            </div>
+        </div>
+        <section id="result">
+            <ul>
+                <li id="firstN"></li>
+                <li id="lastN"></li>
+                <li id="MF"></li>
+                <li id="comment_text"></li>
+            </ul>
+        </section>
+    </main>
+    <section id="result">
 
+    </section>
     </body>
     <script src="script.js"></script>
 </html>
